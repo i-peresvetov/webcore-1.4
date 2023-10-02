@@ -41,12 +41,20 @@ ul {
 }
 
 .left-menu {
-  width: 320px;
-  height: 100%;
-  overflow: auto;
-  position: fixed;
   background-color: #fff;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  height: 100%;
+  width: 320px;
+  position: fixed;
+}
+
+.left-menu__main {
+  width: 320px;
+  height: 100%;
+  max-height: 1024px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
   color: #1b1c21;
   font-family: "TTLakes", Arial, sans-serif;
   font-size: 16px;
@@ -65,7 +73,8 @@ ul {
   display: flex;
   align-items: center;
   padding: 23px 24px;
-  margin-bottom: 42px;
+  margin-bottom: 23px;
+  flex-shrink: 0;
 }
 
 .menu-button {
@@ -111,8 +120,7 @@ ul {
 *********CONTENT***********
 **************************/
 .left-menu__container {
-  overflow: auto;
-  min-height: 64px;
+
 }
 
 .left-menu-content {
@@ -139,7 +147,7 @@ ul {
 }
 
 .left-menu-content__link--active {
-  color: #7E7E82;
+  color: #7e7e82;
 }
 
 .left-menu-content__link:hover {
@@ -167,6 +175,7 @@ ul {
 
 .left-menu-footer {
   padding: 32px 24px;
+  flex-shrink: 0;
 }
 
 .left-menu__footer {
